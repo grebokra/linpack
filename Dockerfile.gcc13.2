@@ -1,0 +1,4 @@
+From gcc:13.2.0
+COPY linpack.c /
+RUN gcc -o linpack -O0 -march=x86-64 linpack.c
+CMD /linpack
